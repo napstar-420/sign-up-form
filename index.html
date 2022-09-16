@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Connectify | Sign-up now</title>
+  </head>
+  <body>
+    <main>
+      <section class="left-container">
+        <article>
+            <h1>Connectify</h1>
+            <p>
+              This is not a real online service! You know you need something like
+              this in your life to help you realize your deepest dreams. Sign up now
+              to get started.
+            </p>
+            <img src="./form_svg.svg" alt="side illustration" width="100%"/>
+        </article>
+      </section>
+      <section class="right-container">
+        <article>
+            <h2>Signup now</h2>
+            <p>You know you want to.</p>
+            <form>
+              <fieldset>
+                <div class="form-control" id="fname-control">
+                  <label for="fname" class="form-label">First name*</label>
+                  <input
+                    type="text"
+                    id="fname"
+                    name="fname"
+                    placeholder="John"
+                    required
+                    class="form-input"
+                    id="fname-input"
+                  />
+                </div>
+                <div class="form-control" id="lname-control">
+                  <label for="lname" class="form-label">Last name*</label>
+                  <input
+                    type="text"
+                    id="lname"
+                    name="lname"
+                    placeholder="Doe"
+                    required
+                    class="form-input"
+                    id="lname-input"
+                  />
+                </div>
+                <div class="form-control" id="email-control">
+                  <label for="email" class="form-label">Email*</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="john@doe.dev"
+                    required
+                    class="form-input"
+                    id="email-input"
+                  />
+                </div>
+                <div class="form-control" id="password-control">
+                  <label for="password" class="form-label">Password*</label>
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="minimum 8 characters"
+                    required
+                    class="form-input pass1"
+                    id="password-input"
+                    pattern='^.*(?=.{8,})(?=.*[a-zA-Z])(?=.*\d).*$'
+                    title="Passwords should be minimum 6 characters in length including at least 1 uppercase letter, 1 lowercase letter, 1 number"
+                  />
+                </div>
+                <div class="form-control" id="confirm-password-control">
+                  <label for="confirm-password" class="form-label">Confirm Password*</label>
+                  <input
+                    type="password"
+                    id="confirm-password"
+                    name="confirm-password"
+                    placeholder="Re-type password"
+                    required
+                    class="form-input pass2"
+                    id="confirm-password-input"
+                    pattern='^.*(?=.{8,})(?=.*[a-zA-Z])(?=.*\d).*$'
+                  />
+                </div>
+              </fieldset>
+              <div class="btn-container">
+                  <button type="submit" class="submit-btn">Create Account</button>
+                  <p>Already have an account? <button>Login</button></p>
+              </div>
+            </form>
+        </article>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>
